@@ -49,7 +49,7 @@ extern "C" {
 
 //INCLUDE RMATH LIBRARY
 #define MATHLIB_STANDALONE
-#include <Rmath.h>
+//#include <Rmath.h>
 
 //INCLUDES BASE STUFFS
 #include "genomic_region.h"
