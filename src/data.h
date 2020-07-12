@@ -16,6 +16,8 @@ public:
 
 	vector < int > mendel_error;
 	vector < int > mendel_total;
+  vector <bool> processed;
+  bool processing;
 
 	vector < vector < bool > > gen1;
 	vector < vector < bool > > gen2;
@@ -33,6 +35,8 @@ public:
 	bool solveDuoFather(int locus, int cidx, int pidx);
 	bool solveDuoMother(int locus, int cidx, int pidx);
 	void solvePedigrees();
+private:
+  void assign_phased_genotype(int idx, int locus, int g1, int g2, int phased);
 };
 
 #endif
